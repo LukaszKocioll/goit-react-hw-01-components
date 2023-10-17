@@ -1,13 +1,13 @@
-import Profile from './Profile/profile';
+import {Profile} from './Profile/Profile.jsx';
 import user from './Profile/user.json';
 
-import Transactions from './Transaction/transaction';
+import {Transaction} from './Transaction/Transaction.jsx';
 import transactionStats from './Transaction/transaction.json';
 
-import FriendList from './FriendList/friendList';
+import {FriendList} from './FriendList/FriendList.jsx';
 import friendUsers from './FriendList/friendList.json';
 
-import Statistics from './Data/data';
+import {Stats} from './Data/Data.jsx';
 import DataStats from './Data/data.json';
 
 
@@ -26,9 +26,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={DataStats} />
+      <Stats title="Upload stats" stats={DataStats} />
       <FriendList friends={friendUsers} />
-      <Transactions items={transactionStats}/>;
+      <Transaction transactions={transactionStats}/>;
     </>
   );
 };

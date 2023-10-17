@@ -27,9 +27,9 @@ export const Transaction =({ transactions })=>{
 Transaction.propTypes = {
     transactions: PropTypes.arrayOf(
       PropTypes.shape({
-        id: PropTypes.number,
+        id: PropTypes.string,
         type: PropTypes.string,
-        amount: PropTypes.number,
+        amount: PropTypes.string,
         currency: PropTypes.string,
       })
     ),
