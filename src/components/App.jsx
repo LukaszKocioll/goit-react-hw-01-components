@@ -1,4 +1,4 @@
-import {Profile} from './Profile/Profile.jsx';
+import {Profile} from '../Profile/Profile.jsx';
 import user from './Profile/user.json';
 
 import {Transaction} from './Transaction/Transaction.jsx';
