@@ -1,0 +1,28 @@
+.friends-list
+{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.item
+{
+    display:inline-block;
+    text-align: center;
+}
+.name
+{
+    font-weight: bold;
+}
+.onlineStatus
+{
+    margin: 5px;
+    color: green;
+}
+.offlineStatus
+{
+    margin: 5px;
+    color: red;
+}
+  

@@ -1,0 +1,38 @@
+.statistics {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 200px; 
+  }
+  
+  .title {
+    font-size: 24px; 
+    text-decoration: underline;
+  }
+  
+  .stat-list {
+    list-style: none;
+    padding: 20px;
+    border: 3px blue solid;
+    border-radius: 20px;
+  }
+  
+  .item {
+    padding: 16px 0;
+    
+  }
+  
+  .statContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+  }
+  .label
+  {
+    font-weight: bold;
+  }
+  .percentage
+  {
+    color: darkblue;
+  }
+  

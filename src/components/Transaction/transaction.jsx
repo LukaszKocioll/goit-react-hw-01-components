@@ -15,9 +15,9 @@ export const Transaction =({ transactions })=>{
   <tbody>
         {transactions.map(({ id, type, amount, currency }) => (
           <tr key={id} className={css.transactionTr}>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
+            <td className={css.type}>{type}</td>
+            <td className={css.amount}>{amount}</td>
+            <td className={css.currency}>{currency}</td>
           </tr>
         ))}
       </tbody>

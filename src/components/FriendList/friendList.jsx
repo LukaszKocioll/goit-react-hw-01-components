@@ -1,9 +1,10 @@
-import css from './friendList.module.css';
+import React from 'react';
 import PropTypes from 'prop-types';
+import css from './friendList.module.css'; // Zaimportuj swój plik CSS
 
 export const FriendList = ({ friends }) => {
   return (
-    <ul className={css["friends-list"]}>
+    <ul className={css['friends-list']}>
       {friends.map(({ avatar, name, isOnline, id }) => (
         <FriendListItem
           avatar={avatar}
@@ -16,6 +17,10 @@ export const FriendList = ({ friends }) => {
   );
 };
 
+FriendList.propTypes = {
+  friends: PropTypes.array.isRequired,
+};
+
 export const FriendListItem = ({ name, isOnline, avatar }) => {
   return (
     <li className={css.item}>
@@ -26,7 +31,10 @@ export const FriendListItem = ({ name, isOnline, avatar }) => {
         alt="User avatar"
         width="40"
       />
-      <p className={css.name}>{name}</p>
+      <p className={css.name}>
+        {name}
+        {isOnline ? <span className={css.onlineStatus}>Online</span> : <span className={css.offlineStatus}>Offline</span>}
+      </p>
     </li>
   );
 };
